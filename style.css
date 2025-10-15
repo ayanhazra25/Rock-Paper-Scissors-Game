@@ -1,0 +1,94 @@
+/* Importing Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(32, 31, 31);
+    background-color: #27f379;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.choices .choice {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choices .choice img {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+#Rock img:hover {
+    box-shadow: 0 0 55px #EE99C2;
+}
+#Paper img:hover {
+    box-shadow: 0 0 55px #C68EFD;
+}
+#Scissor img:hover {
+    box-shadow: 0 0 55px #60B5FF;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 10rem;
+}
+
+#msg {
+    color: #121312;
+    background-color: #21e770;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: inline;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+
+
